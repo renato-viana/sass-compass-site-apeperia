@@ -34,9 +34,16 @@ header .container {
 .menu-principal {
   position: absolute;
   right: 0;
-  top: -0.05em;
+  top: -.5em;
   font-size: 1.2em;
   font-weight: lighter;
+
+  @media #{$mq-mobile} {
+    position: static;
+    display: block;
+    text-align: center;
+    width: auto;
+  }
 
   ul {
     padding-left: 0;
@@ -45,39 +52,18 @@ header .container {
   li {
     display: inline-block;
     width: 5em;
+
+      @media #{$mq-mobile} {
+        margin: .4em;
+        width: auto;
   }
 
   a {
     color: white;
     text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
-  @media #{$mq-mobile} {
-    .menu-opcoes {
-      position: static;
-      display: block;
-      text-align: center;
-    }
-
-    .menu-opcoes li {
-      margin: 0.4em;
-    }
-
-    .destaque {
-      font-size: 14px;
-      height: 250px;
-    }
-
-    .menu-opcoes,
-    .menu-opcoes li,
-    .post-destaque,
-    .posts-antigos,
-    form {
-      width: auto;
-    }
+  a:hover {
+    text-decoration: underline;
   }
 }
