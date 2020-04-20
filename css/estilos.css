@@ -697,7 +697,7 @@ header .container {
 /* line 10, layout/planos.scss */
 .plano {
   background: white;
-  width: 18em;
+  width: 288px;
   display: inline-block;
   margin: 1em 0 0 1.4em;
   padding-bottom: 2em;
@@ -921,8 +921,8 @@ footer::before {
 
 /* line 30, layout/footer.scss */
 footer .container {
-  padding-top: 3em;
-  height: 6.5em;
+  padding-top: 48px;
+  height: 104px;
   position: relative;
 }
 
