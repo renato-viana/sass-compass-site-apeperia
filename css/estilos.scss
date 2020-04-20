@@ -1,3 +1,7 @@
+// técnica CSS que visa diminuir o número de requisições para o servidor. Ela junta várias imagens em uma só e a importa no CSS chama-se sprite.
+$sprite-spacing: 5px;
+@import 'sprite/*.png';
+
 @import 'helpers/variaveis';
 @import 'helpers/mixins';
 

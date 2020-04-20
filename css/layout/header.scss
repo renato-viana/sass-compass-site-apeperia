@@ -34,7 +34,7 @@ header .container {
 .menu-principal {
   position: absolute;
   right: 0;
-  top: -.5em;
+  top: -0.5em;
   font-size: 1.2em;
   font-weight: lighter;
 
@@ -53,17 +53,18 @@ header .container {
     display: inline-block;
     width: 5em;
 
-      @media #{$mq-mobile} {
-        margin: .4em;
-        width: auto;
-  }
+    @media #{$mq-mobile} {
+      margin: 0.4em;
+      width: auto;
+    }
 
-  a {
-    color: white;
-    text-decoration: none;
-  }
+    a {
+      color: white;
+      text-decoration: none;
+    }
 
-  a:hover {
-    text-decoration: underline;
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }
